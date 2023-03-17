@@ -3,9 +3,11 @@ document.addEventListener('DOMContentLoaded', () => {
         speed: 150,
         loop: true
     })
-    .type('Estevan Chicoski Viera ', {dlay: 5000})
-    .delete(23)
-    .type('Jeall.exe ', {delay: 900})
+    .type('Estevan Chicoski Viera', {dlay: 5000})
+    .delete(22)
+    .type('Jeall.exe', {delay: 900})
+    .delete(9)
+    .type('Sr. John', {delay: 800})
     .go()
 })
 
