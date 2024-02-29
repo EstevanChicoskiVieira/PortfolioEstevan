@@ -1,59 +1,46 @@
 document.addEventListener('DOMContentLoaded', () => {
     new TypeIt('.animated', {
-        speed: 150,
+        speed: 120,
         loop: true
     })
-    .type('Estevan Chicoski Viera', {dlay: 5000})
-    .delete(22)
-    .type('Jeall.exe', {delay: 900})
-    .delete(9)
-    .type('Sr. John', {delay: 800})
+    .type('Estevan Chicoski Viera        ', {dlay: 10000})
+    .delete(30)
     .go()
 })
 
-var prota = document.querySelector('.prota')
-var vilao = document.querySelector('.vilao')
-var placar = document.getElementById('placar')
+document.addEventListener('DOMContentLoaded', () => {
+    new TypeIt('.dev', {
+        speed: 120,
+        loop: true
+    })
+    .type('Web FrontEnd       ', {dlay: 5000})
+    .delete(20)
+    /*.type('Desktop ', {delay: 2000})
+    .delete(8)
+    .type('Mobile ', {delay: 2000})
+    .delete(7)*/
+    .type('Discord Bots ', {delay: 2000})
+    .go()
+})
 
-const pulo = () => {
-    prota.classList.add('pulo')
-    
-    setTimeout(() => {
-        prota.classList.remove('pulo')
-    }, 700);
-} // função de pulo do personagem
+/*informações botões*/
 
-let i = 0;
+function one(){
+    document.getElementById("title").innerHTML = 'Sobre Mim';
+    document.getElementById("texto").innerHTML = 'Eu sou Estevan Chicoski Vieira. Atualmente trabalho com marketing/prospects em uma agência web de minha cidade, mas estou a procura de uma vaga meio período para Programador FrontEnd.';
+}
 
-setInterval(() => {
-    i = i + 1;
-    placar.innerHTML = `Sua pontuação: ${i}`;
-}, 2550) // placar 
+function two(){
+    document.getElementById("title").innerHTML = 'Conhecimentos'
+    document.getElementById("texto").innerHTML = 'Atualmente tenho conhecimeto em Html, Css, Sass, JavaScript, Lua (básico), Magento, Cpanel e Wordpress. E também tenho conhecimento básico em Php, Sql, PhpMyAdmin, React, Vue e NodeJs. Estou estudando Python e aprofundando meus conhcimentos em ReactJs'
+}
 
-const loop = setInterval(() => {
-    const vilaoPosition = vilao.offsetLeft;
-    const protaPosition = +window.getComputedStyle(prota).bottom.replace('px', '');
+function three(){
+    document.getElementById("title").innerHTML = 'Experiência'
+    document.getElementById("texto").innerHTML = 'Tenho experiência profissional com marketing, vendas, suporte técnico, dev. wordpress e dev. flutter (Android e IOs), também tenho experiência acadêmica desenvolvendo projetos pessoasis em Html, Scss (Css) e Js.'
+}
 
-    if(vilaoPosition <= 20 && vilaoPosition > 0 && protaPosition <= 70){
-        vilao.style.animation = 'none';  
-        vilao.style.left = `${vilaoPosition}px`;
-
-        setTimeout(() => {
-            document.querySelector('.container').style.display = 'none';
-            document.querySelector('.fim').style.display = 'flex';
-        }, 400)
-    }
-}, 10) // verificação de inicio e fim de jogo
-
-document.addEventListener('keydown', pulo) // pulo por pressionar tecla do teclado
-
-document.getElementById('start').addEventListener('click', () => {
-    document.querySelector('.container').style.display = 'block';
-    document.querySelector('.inicio').style.display = 'none';
-}) // botão de inicio de jogo
-
-document.getElementById('restart').addEventListener('click', () => {
-    window.location.reload(true);
-}) // botão de restart
-
-const container = document.querySelector('.container').addEventListener('click', pulo) // pulo por click na tela
+function four(){
+    document.getElementById("title").innerHTML = 'Pretendo'
+    document.getElementById("texto").innerHTML = 'Futuramente pretendo aprofundar meus conhecimentos em JavaScript, ReactJs e principalmente em Python. Quero estudar Machine Learning e Redes Neurais Artificiais em Python. Também pretendo estudar C#, NestJs, NextJs e GO.'
+}

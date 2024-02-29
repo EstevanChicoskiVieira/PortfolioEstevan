@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="./Assets/Imgs/icon.ico" type="image/x-icon">
         <title>Estevan - Portfólio</title>
 
         <link rel="stylesheet" href="./Assets/Css/style.css">
@@ -11,13 +12,13 @@
     <body>
         <main>
             <div class="div-1">
-                <img id="image" width="150px" src="./Assets/Imgs/profile.png" alt="perfil">
+                <img id="image" width="200px" src="./Assets/Imgs/profile.png" alt="perfil">
                 <div class="text-animated">
                     <span id="text">{⠀</span>
                     <h1 class="animated"></h1>
                     <span id="text">⠀}</span>
                 </div>
-                <p>Programador <span>FullStack</span></p>
+                <p>Desenvolvedor <span class="dev"></span></p>
                 <div class="social">
                     <a target="_blank" href="https://github.com/EstevanChicoskiVieira">
                         <img width="30px" src="./Assets/Imgs/Social/github.png" alt="">
@@ -54,96 +55,155 @@
             </div>
 
             <div class="div-2">
-                <h2>Qume sou?</h2>
-                <p>
-                    ⠀Olá, eu me chamo Estevan e sou programador web FullStack, mas, focado em FrontEnd. Tenho conhecimento em Html, Css, JavaScript, NodeJs, React, Vue, Python e conhecimento básico em php, phpMyAdmin e Sql. Atualmente sou programador web, mas quero seguir com desenvolvimento para Aplicativos móveis e Aplicações Desktop com Python e C#. Também pretendo seguir com Python em Machine Learning, AI e Rede Neural Artificial. Tenho 16 anos e pretendo fazer faculdade de Ciência da Computação. Atualmente trabalho como suporte técnico em uma agência web de minha cidade, por isso, tenho conhecimento em Cpanel, Wordpress e Magento.
-                </p>
+                <div class="container">
+                    <div class="nav">
+                        <button onclick="one()" id="one">
+                            Sobre Mim
+                        </button>
+                        <button onclick="two()" id="two">
+                            Conhecimentos
+                        </button>
+                        <button onclick="three()" id="three">
+                            Experiência
+                        </button>
+                        <button onclick="four()" id="four">
+                            Pretendo
+                        </button>
+                    </div>
+                    <div class="content">
+                        <h1 id="title">Sobre Mim</h1>
+                        <p id="texto">Eu sou Estevan Chicoski Vieira. Atualmente trabalho com desenvolvimento de sites em Wordpress/Divi e desenvolvimento de aplicativos em Flutter (Dart).</p>
+                    </div>
+                </div>
+                <div class="languages">
+                    <img id="an1" width="35px" src="./Assets/Imgs/Ln/html-5.png" alt="">
+                    <img id="an2" width="35px" src="./Assets/Imgs/Ln/css.png" alt="">
+                    <img id="an1" width="30px" src="./Assets/Imgs/Ln/js.png" alt="">
+                    <img id="an2" width="30px" src="./Assets/Imgs/Ln/sass.png" alt="">
+                    <img id="an1" width="30px" src="./Assets/Imgs/Ln/physics.png" alt="">
+                    <img id="an2" width="30px" src="./Assets/Imgs/Ln/python.png" alt="">
+                    <img id="an1" width="35px" src="./Assets/Imgs/Ln/lua.png" alt="">
+                    <img id="an2" width="40px" src="./Assets/Imgs/Ln/php.png" alt="">
+                    <img id="an1" width="35px" src="./Assets/Imgs/Ln/./wordpress.png" alt="">
+                    <img id="an2" width="35px" src="./Assets/Imgs/Ln/terminal.png" alt="">
+                    <img id="an1" width="30px" src="./Assets/Imgs/Ln/visual-studio.png" alt="">
+                </div>
             </div>
 
             <div class="projetos">
                 <!--ínicio-->
-                <div class="card">
-                    <div class="banner">
+                <div class="projeto">
+                    <div class="card">
+                        <div id="cafe" class="banner">
+                        </div>
+                        <div class="content">
+                            <div class="name">
+                                <h1>Jeall's Coffee</h1>
+                            </div>
+                            <div class="descriçao">
+                                <p>Jeall's Coffe é um site simples, no estilo de uma landing page, para mostrar diferesntes tiopos de café. O site ainda n está pronto, mas, vou adicionar cada vez novos tipos de cafés e seus modos de preparo.</p>
+                            </div>
+                            <div class="languages">
+                                <h4>Html, Css</h4>
+                            </div>
+                            <div class="button">
+                                <a target="_blank" href="https://estevanchicoskivieira.github.io/JeallCoffee/">
+                                    <input type="button" value="Vizualizar">
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="name">
-                        <h1>D' Dogs</h1>
+    
+                    <div class="card">
+                        <div id="page" class="banner">
+                        </div>
+                        <div class="content">
+                            <div class="name">
+                                <h1>John' Store</h1>
+                            </div>
+                            <div class="descriçao">
+                                <p>Este site é uma landing page para um site de vendas antigo feito por mim e que pretende ser atulizado no futuro e com maior váriedade de produtos.</p>
+                            </div>
+                            <div class="languages">
+                                <h4>Html, Css e Bootstrap</h4>
+                            </div>
+                            <div class="button">
+                                <a target="_blank" href="https://estevanchicoskivieira.github.io/landingPage/">
+                                    <input type="button" value="Vizualizar">
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="descriçao">
-                        <p>D' Dogs é um projeto para ajudar animais de rua e auxiliar donos de pets. Este projeto ganhou em primeiro lugar no concurso Agrinho em 2022 na cidade de Guarapuava e ganhou uma Impressora 3D para o Colégio Cívico Militar Manoel Ribas no Educatech de 2022, que ocorreu no centro de eventos da Cidade dos Lagos.</p>
+    
+                    <div class="card">
+                        <div id="illusion" class="banner">
+                        </div>
+                        <div class="content">
+                            <div class="name">
+                                <h1>Illusion Squad Web Site</h1>
+                            </div>
+                            <div class="descriçao">
+                                <p>Landing page, Loja e plataforma de cursos para o servidor da illusion squad. Site para informar os usuários sobre o que é a illusion squad e para acessar os cursos do youtube no site e disponibilizar cursos de programação e hacking privados da família.</p>
+                            </div>
+                            <div class="languages">
+                                <h4>Html, Scss, Js, Php, PhpMyAdmin e Wordpress</h4>
+                            </div>
+                            <div class="button">
+                                <a target="_blank" href="https://illusionsquad.org">
+                                    <input type="button" value="Vizualizar">
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="button">
-                        <a href="">
-                            <input type="button" value="Vizualizar">
-                        </a>
+    
+                    <div class="card">
+                        <div id="bloco" class="banner">
+                        </div>
+                        <div class="content">
+                            <div class="name">
+                                <h1>Jeall Notes</h1>
+                            </div>
+                            <div class="descriçao">
+                                <p>Jeall Notes é um bloco de notas feito em electronJs. O principal motivo para ter feito isso foi pois eu sempre achei o bloco de notas padrão do windows muito feio e claro, então, fiz um do meu agrado.</p>
+                            </div>
+                            <div class="languages">
+                                <h4>ElectronJs, NodeJs, Html e Css</h4>
+                            </div>
+                            <div class="button">
+                                <a target="_blank" href="https://github.com/EstevanChicoskiVieira/Bloco-de-Notas">
+                                    <input type="button" value="Vizualizar">
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-
-                <div class="card">
-                    <div class="banner">
-                    </div>
-                    <div class="name">
-                        <h1>Jeall's Coffee</h1>
-                    </div>
-                    <div class="descriçao">
-                        <p>Jeall's Coffe é um site simples, no estilo de uma landing page, para mostrar diferesntes tiopos de café. O site ainda n está pronto, mas, vou adicionar cada vez novos tipos de cafés e seus modos de preparo.</p>
-                    </div>
-                    <div class="button">
-                        <a href="">
-                            <input type="button" value="Vizualizar">
-                        </a>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="banner">
-                    </div>
-                    <div class="name">
-                        <h1>John' Store</h1>
-                    </div>
-                    <div class="descriçao">
-                        <p>Este site é uma landing page para um site de vendas antigo feito por mim e que pretende ser atulizado no futuro e com maior váriedade de produtos.</p>
-                    </div>
-                    <div class="button">
-                        <a href="">
-                            <input type="button" value="Vizualizar">
-                        </a>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="banner">
-                    </div>
-                    <div class="name">
-                        <h1>Name of project</h1>
-                    </div>
-                    <div class="descriçao">
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                    </div>
-                    <div class="button">
-                        <a href="">
-                            <input type="button" value="Vizualizar">
-                        </a>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="banner">
-                    </div>
-                    <div class="name">
-                        <h1>Name of project</h1>
-                    </div>
-                    <div class="descriçao">
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                    </div>
-                    <div class="button">
-                        <a href="">
-                            <input type="button" value="Vizualizar">
-                        </a>
+    
+                    <div id="dogsid" class="card">
+                        <div id="dogs" class="banner">
+                        </div>
+                        <div class="content">
+                            <div class="name">
+                                <h1>D' Dogs</h1>
+                            </div>
+                            <div class="descriçao">
+                                <p>D' Dogs é um projeto para ajudar animais de rua e auxiliar donos de pets. Este projeto ganhou em primeiro lugar no concurso Agrinho em 2022 na cidade de Guarapuava e ganhou uma Impressora 3D para o Colégio Cívico Militar Manoel Ribas no Educatech de 2022, que ocorreu no centro de eventos da Cidade dos Lagos.</p>
+                            </div>
+                            <div class="languages">
+                                <h4>Html, Css, Js e Bootstrap</h4>
+                            </div>
+                            <div class="button">
+                                <a target="_blank" href="https://github.com/EstevanChicoskiVieira/d-dogs">
+                                    <input type="button" value="Vizualizar">
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <!--fim-->
             </div>
         </main>
+        <footer>
+            <p>Feito por Estevan Chicoski Vieira. Para a criação do prtfólio foi ultilizado: Html, Scss, Js, Css, TypeIt e Flaticon</p>
+        </footer>
 
         <script src="./Assets/Js/main.js" defer></script>
         <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js" defer></script>
